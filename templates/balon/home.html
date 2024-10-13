@@ -1,0 +1,182 @@
+{% extends "balon/Header.html" %}
+{% block body_block%}
+
+<!-- Header End -->
+</header>
+
+<main>
+    <!-- Slider Area Start -->
+    <div class="slider-area">
+        <div class="container">
+            <div class="hero__caption">
+
+                <span class="fadeInLeft title-1">Hi This is Trska i Balon</span>
+                <h1 class="fadeInLeft title-2">Gym Trainer</h1>
+                <a href="#" class="my-btn btn btn-outline-success hero-btn fadeInLeft">My Courses</a>
+            </div>
+        </div>
+    </div>
+    <!-- Slider Area End -->
+</main>
+
+
+<!-- trening course-->
+<div class="content-section bg-dark">
+    <div class="container text-white">
+
+        <section class="traning-categories">
+            <div class="row">
+                <!-- Prva kolona -->
+                <div class="col-xl-6 col-lg-6 mb-3">
+                    <div class="text-center">
+                        {%load static%}
+                        <img src="{% static 'balon/images/background/prrsonal-trening.jpeg' %}" alt="slika"
+                            class="img-fluid rounded-circle" style="height: 180px; ">
+
+                        <div>
+                            <h1 style="font-size: 60PX;">Personal training</h3>
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the
+                                    language needed for a successful answer.</p>
+                                <a href="courses.html" class="btn btn-outline-success">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Druga kolona -->
+                <div class="col-xl-6 col-lg-6 mb-3">
+                    <div class="text-center">
+                        <img src="{% static 'balon/images/background/group-trening.jpg' %}" alt="slika"
+                            class="img-fluid rounded-circle" style="height: 180px; ">
+
+                        <div>
+                            <h1 style="font-size: 60PX;">Group training</h3>
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the
+                                    language needed for a successful answer.</p>
+                                <a href="courses.html" class="btn btn-outline-success">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="traning-categories mt-5 position-relative">
+            <h1 class="title-training">WHAT I OFFER</h1>
+
+            <div class="row mt-5">
+                <!-- prva kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 training-box">
+                    <img src="{% static 'balon/images/background/body-building.jpg' %}" alt="slika"
+                        class="img-fluid mt-3" style="height: 250px; ">
+                    <H2 class="mt-4">BODY BUILDING</H2>
+                    <p class="mt-3">You’ll look at graphs and charts in Task One, how to approach the task</p>
+                </div>
+
+                <!-- druga kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 training-box">
+                    <img src="{% static 'balon/images/background/muscle-gain.jpg' %}" alt="slika" class="img-fluid mt-3"
+                        style="height: 250px; ">
+                    <H2 class="mt-4">MUSCLE GAIN</H2>
+                    <p class="mt-3">You’ll look at graphs and charts in Task One, how to approach the task</
+                            class="mt-3">
+                </div>
+
+                <!-- treci kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 training-box">
+                    <img src="{% static 'balon/images/background/weight-loss.webp' %}" alt="slika"
+                        class="img-fluid mt-3" style="height: 250px; ">
+                    <H2 class="mt-4">WEIGHT LOSS</H2>
+                    <p class="mt-3">You’ll look at graphs and charts in Task One, how to approach the task</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="traning-categories mt-5 position-relative">
+            <h1 class="title-training">PRICING</h1>
+
+            <div class="row mt-5">
+                <!-- prva kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 pricing-box">
+                    <img src="{% static 'balon/images/background/bucica.jpg' %}" alt="slika"
+                        class="img-fluid rounded-circle mt-3" style="height: 80px; width: 60px;">
+                    <h3 class="mt-3">6 Months</h3>
+                    <h5>$100/M</h5>
+                    <h5>✅ Free riding</h5>
+                    <h5>✅ Unlimited equipments</h5>
+                    <h5>✅ Personal trainer</h5>
+                    <h5>✅ Weight losing classes</h5>
+                    <h5>✅ Month to mouth</h5>
+                    <button type="button" class="btn btn-outline-danger btn-join">JOIN NOW</button>
+                </div>
+
+                <!-- druga kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 pricing-box">
+                    <img src="{% static 'balon/images/background/bucica.jpg' %}" alt="slika"
+                        class="img-fluid rounded-circle mt-3" style="height: 80px; width: 60px;">
+                    <h3 class="mt-3">12 Months</h3>
+                    <h5>$200/M</h5>
+                    <h5>✅ Free riding</h5>
+                    <h5>✅ Unlimited equipments</h5>
+                    <h5>✅ Personal trainer</h5>
+                    <h5>✅ Weight losing classes</h5>
+                    <h5>✅ Month to mouth</h5>
+                    <button type="button" class="btn btn-outline-danger btn-join">JOIN NOW</button>
+                </div>
+
+                <!-- treci kolona -->
+                <div class="col-xl-3 col-lg-3 mb-3 pricing-box">
+                    <img src="{% static 'balon/images/background/bucica.jpg' %}" alt="slika"
+                        class="img-fluid rounded-circle mt-3" style="height: 80px; width: 60px;">
+                    <h3 class="mt-3">24 Months</h3>
+                    <h5>$300/M</h5>
+                    <h5>✅ Free riding</h5>
+                    <h5>✅ Unlimited equipments</h5>
+                    <h5>✅ Personal trainer</h5>
+                    <h5>✅ Weight losing classes</h5>
+                    <h5>✅ Month to mouth</h5>
+                    <button type="button" class="btn btn-outline-danger btn-join">JOIN NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="traning-categories mt-5 position-relative">
+
+            <div class="row">
+                <!-- Prva kolona -->
+                <div class="col-xl-6 col-lg-6 mb-3">
+                    <img src="{% static 'balon/images/background/img-aboutme.jpg' %}" alt="slika"
+                    class="img-fluidmt-3" style="height: 500px; width: 400px;">
+                </div>
+                <!-- Druga kolona -->
+                <div class="col-xl-6 col-lg-6 mb-3">
+                    <h1>About Me</h1>
+                    <p>You’ll look at graphs and charts in Task One, how to approach the task and the language needed
+                        for a successful answer. You’ll examine Task Two questions and learn how to plan, write and
+                        check academic essays.</p>
+                    <p>Task One, how to approach the task and the language needed for a successful answer. You’ll
+                        examine Task Two questions and learn how to plan, write and check academic essays.</p>
+
+                </div>
+        </section>
+
+
+        <section class="traning-categories mt-5 position-relative">
+            <div class="div-fluid my-video">
+                <a href="#" class="btn btn-play">
+                    <img src="{% static 'balon/images/background/play-button-icon.png' %}" alt="slika"
+                    class="img-fluid rounded-circle mt-3" style="height: 100px; width: 100px;">
+                </a>
+
+            </div>
+        </section>
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

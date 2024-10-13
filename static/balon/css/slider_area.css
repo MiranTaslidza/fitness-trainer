@@ -1,0 +1,103 @@
+/* Slider Area - pozadinska slika */
+.slider-area {
+    position: fixed; /* Fiksira slider */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Pokriva cijeli ekran */
+    background-image: url(../images/background/h1_hero.png); /* Pozadinska slika */
+    background-size: cover; /* Pokriva cijeli prostor */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1; /* Slider je ispod sadržaja koji skrola */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Tekst unutar slidera */
+.hero__caption {
+    color: #fff;
+    z-index: 2; /* Tekst iznad pozadinske slike */
+}
+.title-1 {
+    font-size: 4rem;
+    margin-left: 40px;
+    font-weight: bold;
+    color: transparent; /* Providna unutrašnjost teksta */
+    -webkit-text-stroke: 2px white; /* Bijeli rub */
+    text-shadow: 
+        2px 2px 0 #000, 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        
+}
+
+.title-2 {
+    font-size: 10rem;
+    margin-left: 40px;
+    margin-top: 5px;
+
+}
+
+.my-btn{
+    height: 70px;
+    width: 200px;
+    font-size: 30px;
+    margin-left: 90%;
+    margin-bottom: -200px;
+}
+
+
+/* trening course */
+.content-section {
+    padding: 100px 0; /* Unutrašnji razmak */
+    min-height: 100vh; /* Visina da se pokrije cijeli ekran */
+    z-index: 10; /* Viši z-index kako bi se pojavio iznad slidera */
+    position: relative;
+    margin-top: 100vh; /* Ovaj razmak pomjera novi sadržaj ispod slidera */
+}
+
+
+.title-training{
+    text-align: center;
+    font-size: 6rem;
+    margin-left: 40px;
+    font-weight: bold;
+    color: transparent; /* Providna unutrašnjost teksta */
+    -webkit-text-stroke: 2px white; /* Bijeli rub */
+    text-shadow: 
+        2px 2px 0 #000, 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+}
+.training-box{
+    border: white solid 1px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.pricing-box{
+    color: tomato;
+    border: white solid 1px;
+    margin-left: 5%;
+    
+}
+.btn-join{
+    width: 100%;
+    margin: 20px auto;
+   
+}
+
+.my-video{
+    background-image: url(../images/background/video-bg.png); /* Pozadinska slika */
+    background-size: cover; /* Pokriva cijeli prostor */
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+.btn-play{
+    margin-top: 10%;
+    margin-left: 50%;
+}
