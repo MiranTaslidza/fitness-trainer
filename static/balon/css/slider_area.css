@@ -14,16 +14,20 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
+
+
 
 /* Tekst unutar slidera */
 .hero__caption {
     color: #fff;
     z-index: 2; /* Tekst iznad pozadinske slike */
+    margin-top: 100px;
 }
 .title-1 {
     font-size: 4rem;
-    margin-left: 40px;
+    margin-left: 5%;
     font-weight: bold;
     color: transparent; /* Providna unutrašnjost teksta */
     -webkit-text-stroke: 2px white; /* Bijeli rub */
@@ -36,7 +40,7 @@
 
 .title-2 {
     font-size: 10rem;
-    margin-left: 40px;
+    margin-left: 5%;
     margin-top: 5px;
 
 }
@@ -49,6 +53,72 @@
     margin-bottom: -200px;
 }
 
+/* stilizacija za manje rezolucije */
+/* Stilovi za tablete (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .title-1 {
+        font-size: 2rem; /* Smanji veličinu teksta */
+        margin-left: 5%;
+    }
+
+    .title-2 {
+        font-size: 5rem;
+        margin-left: 5%;
+    }
+
+    .my-btn {
+        height: 60px;
+        width: 180px;
+        font-size: 25px;
+        margin-left: 80%; /* Smanji marginu kako dugme ne bi izlazilo van ekrana */
+        margin-bottom: -150px;
+    }
+}
+
+/* Stilovi za mobilne uređaje (max-width: 768px) */
+@media (max-width: 768px) {
+    .title-1 {
+        font-size: 1.5rem; /* Još manje za mobilne */
+        margin-left: 5%;
+    }
+
+    .title-2 {
+        font-size: 4rem;
+        margin-left: 5%;
+    }
+
+    .my-btn {
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        margin-left: 80%; /* Podesi poziciju dugmeta za manje ekrane */
+        margin-bottom: -100px;
+    }
+}
+
+/* Stilovi za veoma male ekrane (max-width: 480px) */
+@media (max-width: 480px) {
+    .title-1 {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    .title-2 {
+        font-size: 4rem;
+        margin-left: 5%;
+    }
+
+    .my-btn {
+        height: 40px;
+        width: 130px;
+        font-size: 16px;
+        margin-left: 60%; /* Dodatno smanji marginu za vrlo male ekrane */
+        margin-bottom: -80px;
+    }
+}
+
+
+
 
 /* trening course */
 .content-section {
@@ -57,6 +127,7 @@
     z-index: 10; /* Viši z-index kako bi se pojavio iznad slidera */
     position: relative;
     margin-top: 100vh; /* Ovaj razmak pomjera novi sadržaj ispod slidera */
+   
 }
 
 

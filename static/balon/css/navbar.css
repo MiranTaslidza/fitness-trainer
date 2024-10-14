@@ -5,35 +5,36 @@
     width: 100%;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0); /* Poluprovidna pozadina */
-    /*backdrop-filter: blur(10px); /* Blagi zamućen efekat */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Dodaje blagi shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Dodaje blagi shadow */
 }
+
 /* Stil za linkove da budu bijeli u navbaru */
 .navbar .nav-link {
-    /* color: white !important;  !important osigurava da Bootstrap ne nadjača ovu postavku */
-
     color: transparent; /* Providna unutrašnjost teksta */
     -webkit-text-stroke: 2px white; /* Bijeli rub */
     text-shadow: 
         2px 2px 0 #000, 
         -2px -2px 0 #000,
-        2px -2px 0 #000,
+        2px -2px 0 #000;
 }
 
 .navbar .nav-link.active {
-    color: white !important; /*Boja za aktivni link */
+    color: white !important; /* Boja za aktivni link */
 }
-
 
 /* Navbar kada se skroluje */
 .scrolled-navbar {
     color: white !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    /* Možeš dodati i pozadinsku sliku ovdje ako želiš */
     background-image: url(../images/background/hero2.png); /* Pozadinska slika */
     transition: background-color 0.3s ease; /* Efekat prelaska */
 }
 
+/* Responsive styling */
+@media (max-width: 768px) {
+    .my-navbar {
+        background-color: rgba(255, 255, 255, 0.8); /* Povećaj providnost za mobilne uređaje */
+    }
+    .navbar .nav-link {
+        font-size: 1.5rem; /* Veći font za mobilne uređaje */
+    }
+}
